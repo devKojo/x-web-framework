@@ -1,0 +1,5 @@
+RewriteEngine On
+# Only apply the following rules if the requested file doesn't have an extension
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/.]+)$ $1.html [L]

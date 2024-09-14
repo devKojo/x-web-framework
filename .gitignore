@@ -1,0 +1,50 @@
+# Node modules
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+
+# Environment variables
+.env
+.env.*
+
+# Build output
+/dist
+/build
+/coverage
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+# TypeScript
+*.tsbuildinfo
+
+# Compiled source
+*.js
+*.js.map
+
+# Test coverage
+/coverage/
+
+# SASS/SCSS
+*.sass-cache/
+
+# Webpack
+*.webpack/
+*.webpack-bundle-analyzer/
+
+# IDE specific
+/.idea
+/.vscode
+*.code-workspace
+# Custom caches
+static-html-cache/

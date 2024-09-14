@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap");
+.dy-auto {
+  margin: 0 auto !important;
+}
+
+.dy-container {
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  padding: 40px;
+}
+.dy-container__full {
+  width: 100%;
+}
+.dy-container__large {
+  width: 80%;
+}
+.dy-container__medium {
+  width: 50%;
+}
+.dy-container__small {
+  width: 60%;
+}
+.dy-container--primary {
+  background-color: #ffffff;
+}
+.dy-container--secondary {
+  background-color: #575555;
+}
+
+.dy-multi-column {
+  display: grid;
+  place-items: center;
+}
+.dy-multi-column__half {
+  grid-template-columns: 1fr 1fr;
+}
+.dy-multi-column__3Column {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.dy-hero__full {
+  width: 100%;
+}
+.dy-hero__large {
+  width: 80%;
+}
+.dy-hero--primary {
+  background-color: #EC5051;
+}
+.dy-hero--secondary {
+  background-color: #575555;
+}
+.dy-hero--default {
+  background-color: #ecf1f7;
+}
+
+.dy-heading {
+  font-weight: 700;
+}
+.dy-heading__large {
+  font-size: 52px;
+}
+.dy-heading__medium {
+  font-size: 42px;
+}
+
+.dy-nav-link-list {
+  display: flex !important;
+}
+.dy-nav-link-list--h-list {
+  list-style-type: none !important;
+  text-decoration: none !important;
+}
+.dy-nav-link-list--h-list > li {
+  padding: 0 8px;
+}
+
+.dy-image-list__image {
+  margin-right: 20px !important;
+}
+.dy-image-list__list {
+  display: flex;
+  list-style-type: none !important;
+}
+
+.dy-navbar__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.5% auto;
+}
+
+* {
+  font-family: "Anek Devanagari", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  box-sizing: border-box;
+}
+
+a:link, a:visited, a:active {
+  color: #B0B0B0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EC5051;
+}/*# sourceMappingURL=main.css.map */

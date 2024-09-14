@@ -1,0 +1,20 @@
+.dy-nav-link-list{
+    display: flex !important;
+&--h-list{
+    list-style-type: none !important;
+    text-decoration: none !important;
+    >li{
+        padding:0 8px;
+    }
+}
+}
+
+.dy-image-list{
+    &__image{
+        margin-right: 20px !important;
+    }
+    &__list{
+        display: flex;
+        list-style-type: none !important;
+    }
+}

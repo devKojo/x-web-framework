@@ -1,0 +1,74 @@
+@use "./variables" as vars;
+
+.dy-auto{
+    margin: 0 auto !important;
+}
+
+.dy-container{
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    padding: 40px;
+&__full{
+    width: 100%;
+}
+&__large{
+    width: 80%;
+}
+&__medium{
+
+    width: 50%;
+}
+&__small{
+    width: 60%;
+}
+&--primary{
+    background-color: vars.$dy--white;
+}
+&--secondary{
+ background-color: vars.$dy--secondary;
+}
+}
+
+.dy-multi-column{
+    display: grid;
+    place-items: center;
+    &__half{
+        grid-template-columns: 1fr 1fr;
+    }
+    &__3Column{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+.dy-hero{
+    &__full{
+        width: 100%;
+    }
+    &__large{
+        width: 80%;
+    }
+    &--primary{
+        background-color: vars.$dy--primary;
+    }
+    &--secondary{
+        background-color: vars.$dy--secondary;
+    }
+    &--default{
+        background-color: vars.$dy--gray;
+    }
+    
+}
+
+
+.dy-heading{
+    font-weight: 700;
+    &__large{
+        font-size: 52px;
+    }
+    &__medium{
+        font-size: 42px;
+    }
+}
+

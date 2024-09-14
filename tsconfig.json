@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
+      "@utils/*": ["src/utils/*"],
+      "@pages/*": ["src/pages/*"],
+      "@src/*": ["src/*"],
+    },
+    "outDir": "./src/assets/js",       // Specify the output directory for transpiled files
+    "target": "ES6",                   // Specify ECMAScript target version
+    "module": "CommonJS",              // Specify module code generation
+    "strict": true,                    // Enable all strict type-checking options
+    "esModuleInterop": true,           // Enable esModuleInterop to support CommonJS and ES Modules
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing in module file names
+    "skipLibCheck": true,              // Skip type checking of declaration files
+    "sourceMap": true                  // Generate source maps for debugging
+  },
+  "include": ["src/main.ts", "src/custom.d.ts", "src/app/route.d.ts"],// Explicitly compile only main.ts
+  "exclude": ["node_modules", "dist", "**/*.spec.ts", "**/src/assets/**/*.ts"]
+}
