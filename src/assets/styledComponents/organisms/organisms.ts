@@ -1,34 +1,17 @@
+import { generateLinkList } from "@utils/utils";
 import { ImageComponent } from "../atoms/atoms";
 import { NavLinkList } from "../molecules/molecules";
+import {routes} from "@app/routing/routes";
+
 
 const navList = {
     id: 'site-primary-navigation',
-    linkList: [
-        {
-            id: 'docs',
-            label: 'Docs',
-            href: '/docs'
-        },
-        {
-            id: 'github',
-            label: 'Github',
-            href: '#'
-        },
-        {
-            id: 'templates',
-            label: 'Templates',
-            href: '/templates'
-        },
-        {
-            id: 'contact',
-            label: 'Contact',
-            href: '/contact'
-        }
-    ]
+    linkList: generateLinkList(routes)
 }
 
 const imageComponent = new ImageComponent();
 const navLinkList = new NavLinkList();
+
 
 export class NavBar{
     render(){

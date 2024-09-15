@@ -1,4 +1,4 @@
-export interface HtmlElementInnerContentType{
+export  interface HtmlElementInnerContentType{
     elem: HTMLElement | null;
     template: string;
     btnId?: string;
@@ -29,3 +29,10 @@ export interface NavLinkListPropType{
     id: string,
     linkList: LinkListType[]
 }
+export type RouteMap = { [key: string]: string };
+
+export type Link = {
+    id: string;
+    label: string;
+    href: string;
+};

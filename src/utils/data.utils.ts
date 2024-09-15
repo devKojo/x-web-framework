@@ -6,6 +6,7 @@ import iconTypescript from '@assets/img/icon_typescript.svg';
 import iconWebpack from '@assets/img/icon_webpack.svg';
 import iconNpm from '@assets/img/icon_npm.svg';
 
+
 export const img_utils = [
     {
         id: 'icon_html5',

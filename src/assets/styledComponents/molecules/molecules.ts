@@ -1,5 +1,6 @@
-import {ImageComponentPropType, NavLinkListPropType} from "../../../types/types";
-import {ButtonComponent, ImageComponent} from "../atoms/atoms";
+import { ImageComponentPropType, NavLinkListPropType } from "../../../types/types";
+import { ButtonComponent, ImageComponent } from "../atoms/atoms";
+
 
 const buttonComponent = new ButtonComponent();
 export class NavLinkList{
@@ -17,7 +18,7 @@ export class NavLinkList{
 
 
 const imageComponent = new ImageComponent();
-export class ImageList{
+export  class ImageList{
     public render(props:ImageComponentPropType[]){
         let createImageList = "<ul class='dy-image-list__list'>";
         props.forEach(({id, src, alt, width, height})=>{
@@ -25,5 +26,6 @@ export class ImageList{
         });
         return createImageList+"</ul>"
     }
-
 }
+
+

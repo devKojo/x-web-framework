@@ -1,24 +1,25 @@
 
 //Use this file to expose or render dom elements such as dynamic nav, buttons, imageLists etc.
 import "@assets/css/main.css";
-import "@src/app/routing/router";
-import { ButtonComponent } from "@assets/styledComponents/atoms/atoms";
+import "@src/app/routing/utils/router.init";
 import { ImageList } from "@assets/styledComponents/molecules/molecules";
-import {NavBar} from "@assets/styledComponents/organisms/organisms"
-import {setHtmlElementInnerContent } from "@utils/utils";
-import {img_utils} from "@utils/data.utils";
+import { NavBar } from "@assets/styledComponents/organisms/organisms";
+import { setHtmlElementInnerContent } from "@utils/utils";
+import { img_utils } from "@utils/data.utils";
+
+
+
+
 
 //import components to be exposed in the dom
-const buttonComponent = new ButtonComponent();
 const navBarComponent = new NavBar();
 const imageListComponent = new ImageList();
 
-/*Use customer method setHtmlElementInnerContent to expose your contents by passing in 
+/*Use custom method setHtmlElementInnerContent to expose your contents by passing in 
  the dom element and the template to render*/
 
-//Render Navbar
-export default function Initializer(){
-
+document.addEventListener("DOMContentLoaded", ()=> {  
+     //Render Navbar
 const selectNavbar = document.getElementById('dy-navbar');
 setHtmlElementInnerContent(
     {
@@ -35,3 +36,4 @@ setHtmlElementInnerContent(
         }); 
 
     }
+);

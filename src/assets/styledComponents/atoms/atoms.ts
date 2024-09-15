@@ -1,5 +1,4 @@
 import { ButtonComponentPropType, ImageComponentPropType } from "../../../types/types";
-
 export class ButtonComponent {
     public render(props: ButtonComponentPropType): string {
         const { id, label = 'Explore', href, type='button' } = props;

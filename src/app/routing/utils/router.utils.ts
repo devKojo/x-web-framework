@@ -1,9 +1,8 @@
-import Initializer from "@src/main";
 
 const baseUrl = process.env.BASE_URL;
 const dist = `${baseUrl}/pages`;
 
-export default class FullPageRouter {
+class FullPageRouter {
     private cacheName = 'static-html-cache'; // Cache name for storing static HTML pages
     private routes: { [key: string]: string } = {}; // Route map for static HTML pages
     private notFoundPage = `${dist}/404.html`; // Path to the static 404 page
@@ -18,6 +17,7 @@ export default class FullPageRouter {
 
     // Preload and cache all static pages on initialization
     private async preloadStaticPages() {
+
         const cacheKeys = Object.keys(this.routes)
             .map(route => `${dist}/${this.routes[route]}`)
             .concat([this.notFoundPage, this.indexPage]);
@@ -158,7 +158,9 @@ export default class FullPageRouter {
 
     // Re-initialize dynamic content (to be customized based on your specific needs)
     private initializeDynamicContent() {
-        Initializer(); // Call the Initializer function to set up dynamic content
+         // Call the Initializer function to set up dynamic content
         // You can add more initializations as needed
     }
 }
+
+export default FullPageRouter;
